@@ -1,0 +1,44 @@
+<section class="sidebar-add-hero">
+  <!--<section class="search-preview">
+  </section>-->
+  <app-hero-preview class="search-preview"></app-hero-preview>
+  <h1>ADD NEW HERO</h1>
+  <form class="add-hero-form">
+    <mat-form-field class="input-full-width">
+      <mat-label>First Apparitions</mat-label>
+      <input matInput #firstApparition>
+    </mat-form-field>
+
+    <mat-form-field class="input-full-width">
+      <mat-label>Super Hero</mat-label>
+      <input matInput #superHero>
+    </mat-form-field>
+
+    <mat-form-field class="input-full-width">
+      <mat-label>Alter Ego</mat-label>
+      <input matInput #alterEgo>
+    </mat-form-field>
+
+    <mat-form-field class="input-full-width">
+      <mat-label>Characters</mat-label>
+      <input matInput #characters>
+    </mat-form-field>
+
+    <mat-form-field class="input-full-width">
+      <mat-label>Created</mat-label>
+      <input matInput #created>
+    </mat-form-field>
+
+    <mat-form-field class="input-full-width">
+      <mat-label>Photo(URL)</mat-label>
+      <input matInput #photo>
+    </mat-form-field>
+    <button mat-stroked-button (click)="addHero([
+          firstApparition.value,
+          alterEgo.value,
+          characters.value,
+          created.value,
+          photo.value,
+          superHero.value])">Add Hero</button>
+  </form>
+</section>

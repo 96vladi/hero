@@ -1,0 +1,12 @@
+<section class="container-home">
+  <section class="home-content">
+    <section class="content-sidebar">
+      <app-seek-hero></app-seek-hero>
+      <app-new-hero></app-new-hero>
+    </section>
+    <section class="content-container-list-hero">
+      <p *ngIf="loading$ | async">Loading...</p>
+      <app-list-hero></app-list-hero>
+    </section>
+  </section>
+</section>

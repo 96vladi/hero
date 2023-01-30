@@ -1,0 +1,9 @@
+<section class="sidebar-search">
+  <section class="search">
+    <mat-form-field appearance="fill">
+      <mat-label>Hero Name</mat-label>
+      <input matInput placeholder="Hero Name" #nameHero>
+    </mat-form-field>
+    <button mat-stroked-button (click)="search(nameHero.value)">Search</button>
+  </section>
+</section>

@@ -1,0 +1,9 @@
+<section class="container-list-hero">
+  <header class="list-hero-title">
+    <h1>HERO LIST</h1>
+  </header>
+  <hr>
+  <section class="list-hero-cards">
+    <app-card-hero [hero]="hero" *ngFor="let hero of heroes$ | async"></app-card-hero>
+  </section>
+</section>
